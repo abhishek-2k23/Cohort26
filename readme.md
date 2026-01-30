@@ -58,8 +58,8 @@ Cohort26/
 
 Screenshot
 
-| Part 1 | Part 2 |
-|-------------|----------------|
-| ![](./screenshots/resume-assignment-1.png) | ![](./screenshots/resume-assignment-1.png) |
+![Resume – Header Section](./screenshots/resume-assignment-1.png)
+![Resume – Header Section](./screenshots/resume-assignment-2.png)
 
 
+## Thanks for visiting 💖
