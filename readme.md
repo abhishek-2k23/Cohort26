@@ -28,12 +28,13 @@ https://cohort26.vercel.app/
 
 ## 📂 Project Structure
 
-resume-website/
-│
-├── index.html
-├── README.md
-└── screenshots/
-└── resume-preview.png
+Cohort26/
+├── readme.md
+├── screenshots/
+│   ├── resume-assignment-1.png
+│   └── resume-assignment-1.png
+└── resume-assignment/
+    └── index.html
 
 ---
 
@@ -41,7 +42,7 @@ resume-website/
 
 1. Clone the repository or download the ZIP file  
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/abhishek-2k23/Cohort26
 
 2. Navigate to the project folder
     ```bash
