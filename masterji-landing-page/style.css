@@ -1,0 +1,99 @@
+:root{
+    --accent-color: #FB923C;
+    --black: #111111;
+    --secorndary-color: #B7B7B7;
+    --nav-hover-color: #262626;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-color: var(--black);
+}
+.container{
+    width: 90vw;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    width: 92%;
+    height: 80px;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+}
+nav img{
+    width: 30px;
+    height: auto;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    background-color: none;
+    gap: 10px;
+    color: white;
+}
+nav ul li{
+    cursor: pointer;
+    padding: 5px 10px;
+    font-family: plus-jakarta-sans, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: #FFFBF0;
+    font-weight: 500;
+    font-size: 14px;
+    padding: .5rem 1rem;
+    margin-left: 0;
+}
+nav ul li a:hover{
+    background-color: var(--nav-hover-color);
+    border-radius: 20px;
+}
+nav .nav-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+nav .nav-right .circle-box{
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+nav .nav-right .circle-box .circle1{
+    background-color: white;
+    width: 50%;
+}
+nav .nav-right .circle-box .circle1{
+    background-color: white;
+    width: 50%;
+}
+
+nav .nav-right .circle-box .circle2{
+    background-color: var(--black);
+    width: 50%;
+}
+nav button{
+    background-color: var(--secorndary-color);
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    color: var(--black);
+    border-radius: 20px;
+    border: none;
+
+}
