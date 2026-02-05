@@ -9,10 +9,11 @@
     --green: #0C8C5E;
     --black: #08090A;
     --border: gainsboro;
+    --white-secondary: #F7F7F7;
 }
-*{
+/* *{
   border: 1px dashed red;
-}
+} */
 body{
     font-family:  'Inter', sans-serif;
 }
@@ -348,3 +349,148 @@ main{
   font-size: 16px;
 }
 
+#enterprise{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-secondary);
+
+}
+.enterprise-container{
+    width: 70%;
+    height: 70%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.enterprise-container .title{
+  color: var(--green);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.enterprise-container .heading{
+  width: 50%;
+  font-size: 40px;
+  font-weight: 600;
+
+}
+.enterprise-container .desc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.enterprise-container .desc button{
+  background-color: var(--black);
+  padding: 10px 15px;
+  color: var(--white);
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.enterprise-container .two-cards{
+  margin: 20px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 300px;
+}
+.enterprise-container .card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.enterprise-container .card .svg-icon{
+  width: 32px;
+  height: 32px;
+
+}
+.enterprise-container .card .heading{
+  width: 100%;
+  font-size: 20px;
+}
+.enterprise-container .card .description{
+  font-size: 16px;
+  letter-spacing: 1.5;
+  color: var(--black);
+  opacity: 0.8;
+}
+.enterprise-container .first-card .description{
+  width: 88%;
+}
+.enterprise-container .first-card .svg-icon{
+  color: var(--green);
+}
+
+.enterprise-container .img-card{
+  width: 100%;
+  height: 560px;
+  border-radius: 15px;
+  background: url('./asset/anthropic.svg');
+  background-size: cover;
+  margin-bottom: 20px;
+  margin-top: -50px;
+  position: relative;
+}
+.enterprise-container .img-card .black-layer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+.enterprise-container .img-card .black-layer:hover{
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.162), transparent);
+}
+.enterprise-container .img-card .top{
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  color: #fff
+}
+.enterprise-container .img-card .bottom{
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  display: flex;
+  align-items: baseline;
+  gap: 80px;
+  color: #fff;
+}
+.enterprise-container .img-card .bottom div{
+  max-width: 190px;
+}
+.enterprise-container .img-card a .svg-arrow{
+  width: 20px;
+  height: 20px;
+  transform: rotate(180);
+}
+.enterprise-container .img-card .title{
+  font-size: 12px;
+  color: var(--white);
+  font-weight: 700;
+}
+.enterprise-container .img-card .desc{
+  font-size: 24px;
+  font-weight: 500;
+}
+.enterprise-container .img-card a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+}
+.enterprise-container .img-card .bottom .heading{
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.enterprise-container .img-card .bottom .description{
+  color: #ffff;
+  font-size: 14px;
+}
+.enterprise-container .img-card .bottom 
