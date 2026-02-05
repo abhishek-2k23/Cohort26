@@ -10,6 +10,9 @@
     --black: #08090A;
     --border: gainsboro;
 }
+*{
+  border: 1px dashed red;
+}
 body{
     font-family:  'Inter', sans-serif;
 }
@@ -225,11 +228,16 @@ header .hero-img{
 }
 
 main{
-    max-width: 70%;
-    margin: 0 auto;
+    max-width: 100%;
     margin-top: 300px;
 
-
+}
+#main-1{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #companies-icons{
     height: 156px;
@@ -307,8 +315,36 @@ main{
 
 #intelligence-age .desc .top .txt-desc{
   font-size: 16px;
-  width: 75%;
+  width: 77%;
   text-align: left;
   color: var(--black);
   opacity: 0.9;
 }
+#assistance{
+  width: 96%;
+  height: 900px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#assistance .title{
+  color: var(--green);
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+#assistance h3{
+  font-weight: 500;
+  font-size: 24px;
+}
+#assistance .desc{
+  color: var(--black);
+  width: 48%;
+  text-align: center;
+  font-size: 16px;
+}
+
