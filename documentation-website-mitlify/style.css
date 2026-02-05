@@ -4,10 +4,11 @@
   box-sizing: border-box;
 }
 :root{
-    --white: #F3F7F8;
+    --white: #ebebeb;
     --white-hover: #D9E4EA;
     --green: #0C8C5E;
     --black: #08090A;
+    --border: gainsboro;
 }
 body{
     font-family:  'Inter', sans-serif;
@@ -21,6 +22,7 @@ header {
   height: 980px;
   background: url("./asset/bg-light.svg");
   background-size: cover;
+  background-position-y: bottom;
   position: relative;
 }
 header .white-layer {
@@ -71,7 +73,8 @@ nav #nav-container .links ul{
     align-items: center;
     font-weight: 500;
     list-style: none;
-    color: white;
+    color: var(--white)
+  ;
 }
 nav #nav-container .links ul li{
     background-color: transparent;
@@ -108,7 +111,7 @@ nav #nav-container .cta button:nth-child(2){
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(136, 136, 136, 0.349);
+    background-color: #044967;
     padding: 3px 5px;
     color: white;
     gap: 5px;
@@ -235,6 +238,7 @@ main{
     grid-template-rows: 64px 64px;
     grid-template-columns: repeat(4,250px);
     gap: 10px;
+    margin-bottom: 180px;
 }
 #companies-icons .icon{
     display: flex;
@@ -244,7 +248,67 @@ main{
 
 /* intelligence-age */
 #intelligence-age{
-    margin-top: 300px;
-    
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+#intelligence-age h2{
+  width: fit-content;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#intelligence-age p{
+  font-size: 16px;
+  width: 55%;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 400px;
+  text-align: center;
+}
+
+#intelligence-age .description{
+  display: grid;
+  grid-template-columns: 495px 495px;
+  grid-template-rows: 535px;
+  gap: 20px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+#intelligence-age .desc{
+  border: 1px solid gainsboro;
+  box-shadow: 0px 0px 1px rgb(238, 238, 238);
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#intelligence-age .desc .top .title{
+  color: var(--green);
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.2;
+  text-transform: uppercase;
+}
+#intelligence-age .desc .top h4{
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+#intelligence-age .desc .top .txt-desc{
+  font-size: 16px;
+  width: 75%;
+  text-align: left;
+  color: var(--black);
+  opacity: 0.9;
+}
