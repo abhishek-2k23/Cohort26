@@ -568,6 +568,69 @@ gap: 20px;
   border-radius: 15px;
   position: relative;
 }
+/* black overlay */
+#customer .card  .card-layer {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.677), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* show layer on hover */
+#customer .card:hover .card-layer {
+  opacity: 1;
+}
+#customer .cards .card:nth-child(2) .card-img{
+  background: url("./asset/x.png");
+  background-size: cover;
+}
+#customer .cards .card:nth-child(3) .card-img{
+  background: url("./asset/kalshi.png");
+  background-size: cover;
+}
+#customer .cards .card:nth-child(4) .card-img{
+  background: url("./asset/cognition.png");
+  background-size: cover;
+}
+#customer .cards .card:nth-child(5) .card-img{
+  background: url("./asset/togetherai.png");
+  background-size: cover;
+}
+#customer .cards .card:nth-child(6) .card-img{
+  background: url("./asset/laravel.png");
+  background-size: cover;
+}
+#customer .cards .card:nth-child(7) .card-img{
+  background: url("./asset/replit.png");
+  background-size: cover;
+}
+#customer .cards .card:nth-child(8) .card-img{
+  background: url("./asset/glean.png");
+  background-size: cover;
+}
+#customer .cards .card:nth-child(9) .card-img{
+  background: url("./asset/lovable.png");
+  background-size: cover;
+}
+#customer .cards .card:nth-child(10) .card-img{
+  background: url("./asset/vercel.png");
+  background-size: cover;
+}
+#customer .cards .card:nth-child(11) .card-img{
+  background: url("./asset/fidelity.png");
+  background-size: cover;
+}
+#customer .cards .card:nth-child(12) .card-img{
+  background: url("./asset/anaconda.png");
+  background-size: cover;
+}
+#customer .cards .card:nth-child(13) .card-img{
+  background: url("./asset/loops-cover.png");
+  background-size: cover;
+}
 #customer .card .card-text{
   position: absolute;
   top: 50%;
