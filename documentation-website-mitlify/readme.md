@@ -172,6 +172,22 @@ The goal was to closely replicate the **layout, visuals, typography, and structu
 > This light theme focuses on **clarity, readability, and accessibility**,  
 > using soft neutrals with a green accent for primary interactions.
 
+---
+
+### Screenshots
+![image](./video-ss/i1.png)
+![image](./video-ss/i2.png)
+![image](./video-ss/i3.png)
+![image](./video-ss/i4.png)
+![image](./video-ss/i5.png)
+![image](./video-ss/i6.png)
+![image](./video-ss/i7.png)
+![image](./video-ss/i8.png)
+![image](./video-ss/i9.png)
+![image](./video-ss/i10.png)
+
+
+
 ## ✅ Best Practices Followed
 
 - Proper use of **semantic HTML tags**
