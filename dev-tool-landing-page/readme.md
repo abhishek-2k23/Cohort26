@@ -126,6 +126,13 @@ The main goals of this project were:
 
 ---
 
+## 🚀 Run Locally (Clone & Test)
+
+Follow these steps to run the project on your system:
+
+```bash
+git clone https://github.com/abhishek-2k23/Cohort26/tree/main/dev-tool-landing-page
+
 ## 📌 Notes
 
 This project is created **strictly for educational and practice purposes**.  
