@@ -110,7 +110,6 @@ Accent colors are used sparingly to highlight primary actions and important UI e
       <th align="left">Token</th>
       <th align="left">Hex</th>
       <th align="left">Usage</th>
-      <th align="left">Preview</th>
     </tr>
   </thead>
   <tbody>
@@ -118,55 +117,46 @@ Accent colors are used sparingly to highlight primary actions and important UI e
       <td><code>--black</code></td>
       <td><code>#14120b</code></td>
       <td>Primary background</td>
-      <td><img src="https://via.placeholder.com/20/14120b/14120b" /></td>
     </tr>
     <tr>
       <td><code>--black-secondary</code></td>
       <td><code>#1b1913</code></td>
       <td>Secondary surfaces</td>
-      <td><img src="https://via.placeholder.com/20/1b1913/1b1913" /></td>
     </tr>
     <tr>
       <td><code>--black-hover</code></td>
       <td><code>#1d1b15</code></td>
       <td>Hover states</td>
-      <td><img src="https://via.placeholder.com/20/1d1b15/1d1b15" /></td>
     </tr>
     <tr>
       <td><code>--orange</code></td>
       <td><code>#bf4105</code></td>
       <td>Primary accent / CTA</td>
-      <td><img src="https://via.placeholder.com/20/bf4105/bf4105" /></td>
     </tr>
     <tr>
       <td><code>--white</code></td>
       <td><code>#d7d6d5</code></td>
       <td>Light surfaces</td>
-      <td><img src="https://via.placeholder.com/20/d7d6d5/d7d6d5" /></td>
     </tr>
     <tr>
       <td><code>--white-2</code></td>
       <td><code>#edecec</code></td>
       <td>Icons / highlights</td>
-      <td><img src="https://via.placeholder.com/20/edecec/edecec" /></td>
     </tr>
     <tr>
       <td><code>--white-text</code></td>
       <td><code>#edecec</code></td>
       <td>Primary text</td>
-      <td><img src="https://via.placeholder.com/20/edecec/edecec" /></td>
     </tr>
     <tr>
       <td><code>--white-text-secondary</code></td>
       <td><code>#9A9996</code></td>
       <td>Secondary / muted text</td>
-      <td><img src="https://via.placeholder.com/20/9A9996/9A9996" /></td>
     </tr>
     <tr>
       <td><code>--link-text-color</code></td>
       <td><code>#BF4105</code></td>
       <td>Links & emphasis</td>
-      <td><img src="https://via.placeholder.com/20/BF4105/BF4105" /></td>
     </tr>
   </tbody>
 </table>
