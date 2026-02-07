@@ -7,6 +7,12 @@ The goal was to closely replicate the **layout, visuals, typography, and structu
 
 ---
 
+## 🎥 Project Demo
+
+<video src="./video-ss/mintlify.mp4" controls width="100%" height="100%"></video>
+
+---
+
 ## 🧩 Sections Implemented
 
 ### 1. Top Navigation Bar
@@ -80,12 +86,6 @@ The goal was to closely replicate the **layout, visuals, typography, and structu
 - Multi-column layout
 - Company, product, and legal links
 - Semantic `<footer>` usage
-
----
-
-## 🎥 Project Demo
-
-<video src="./video-ss/mintlify.mp4" controls width="100%"></video>
 
 ---
 
