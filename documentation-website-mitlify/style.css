@@ -28,6 +28,7 @@ header {
   background-size: cover;
   background-position-y: bottom;
   position: relative;
+  padding-top: 65px;
 }
 header .white-layer {
   position: absolute;
@@ -45,14 +46,13 @@ header .white-layer {
 header nav {
   height: 65px;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1000;
-
   animation: add-glass linear both;
   animation-timeline: scroll();
   animation-range: 0px 50px;
 }
+
 @keyframes add-glass {
   from {
     background: transparent;
@@ -126,7 +126,7 @@ nav #nav-container .cta button:nth-child(2) {
   background-color: var(--green);
   border: none;
   border-radius: 20px;
-  padding: 5px;
+  padding: 5px 8px;
   color: var(--white);
   font-weight: 600;
   text-align: center;
@@ -134,10 +134,15 @@ nav #nav-container .cta button:nth-child(2) {
 }
 
 .new-feat .arrow {
-  width: 20px;
-  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  color: black;
+  background-color: white;
 }
 
 header .info {
