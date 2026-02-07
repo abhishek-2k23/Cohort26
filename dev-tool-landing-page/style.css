@@ -198,6 +198,7 @@ nav .download{
     padding: 15px;
     gap: 20px;
     background-color: var(--black-secondary);
+    overflow: hidden;
 }
 .feature-card:hover{
     background-color: var(--black-hover);

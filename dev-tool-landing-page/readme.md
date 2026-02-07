@@ -97,6 +97,21 @@ The objective was to closely recreate the **layout, visual structure, typography
 
 ---
 
+### Screenshots
+![image](./screenshots/i1.png)
+![image](./screenshots/i2.png)
+![image](./screenshots/i3.png)
+![image](./screenshots/i4.png)
+![image](./screenshots/i5.png)
+![image](./screenshots/i6.png)
+![image](./screenshots/i7.png)
+![image](./screenshots/i8.png)
+![image](./screenshots/i9.png)
+![image](./screenshots/i10.png)
+![image](./screenshots/i11.png)
+![image](./screenshots/i12.png)
+---
+
 ## 🎨 Fonts & Colors
 This project follows a dark-first design system with high contrast typography and a minimal color palette.
 Accent colors are used sparingly to highlight primary actions and important UI elements.

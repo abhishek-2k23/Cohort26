@@ -186,6 +186,8 @@ The goal was to closely replicate the **layout, visuals, typography, and structu
 ![image](./video-ss/i9.png)
 ![image](./video-ss/i10.png)
 
+---
+
 
 
 ## ✅ Best Practices Followed
