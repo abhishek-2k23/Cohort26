@@ -320,9 +320,15 @@ main {
   color: var(--black);
   opacity: 0.9;
 }
+
+#intelligence-age .desc .bottom{
+  margin: 0 auto;
+  width: 90%;
+  height: 320px;
+}
 #assistance {
-  width: 96%;
-  height: 900px;
+  width: 95%;
+  height: 665px;
   border: 1px solid var(--border);
   border-radius: 20px;
   padding-top: 50px;
@@ -330,6 +336,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin-bottom: 130px;
 }
 #assistance .title {
   color: var(--green);
@@ -346,6 +353,12 @@ main {
   width: 48%;
   text-align: center;
   font-size: 16px;
+}
+#assistance .feature-video {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  border-radius: 20px;
 }
 
 #enterprise {
