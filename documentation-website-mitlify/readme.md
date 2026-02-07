@@ -95,6 +95,82 @@ The goal was to closely replicate the **layout, visuals, typography, and structu
 - CSS3
 
 ---
+## 🎨 Design System (Light Theme)
+
+### Color Palette
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Token</th>
+      <th align="left">Hex</th>
+      <th align="left">Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>--white</code></td>
+      <td><code>#ebebeb</code></td>
+      <td>Primary background</td>
+    </tr>
+    <tr>
+      <td><code>--white-hover</code></td>
+      <td><code>#d9e4ea</code></td>
+      <td>Hover states / subtle highlights</td>
+    </tr>
+    <tr>
+      <td><code>--white-secondary</code></td>
+      <td><code>#f7f7f7</code></td>
+      <td>Secondary surfaces</td>
+    </tr>
+    <tr>
+      <td><code>--black</code></td>
+      <td><code>#08090a</code></td>
+      <td>Primary text</td>
+    </tr>
+    <tr>
+      <td><code>--green</code></td>
+      <td><code>#0c8c5e</code></td>
+      <td>Primary accent / success actions</td>
+    </tr>
+    <tr>
+      <td><code>--border</code></td>
+      <td><code>gainsboro</code></td>
+      <td>Borders & separators</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+### 🔤 Typography
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Font</th>
+      <th align="left">Weight Range</th>
+      <th align="left">Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Inter</strong></td>
+      <td>100 – 900 (Italic supported)</td>
+      <td>Primary UI, headings, body text</td>
+    </tr>
+    <tr>
+      <td><strong>System Sans-Serif</strong></td>
+      <td>Fallback</td>
+      <td>Font fallback support</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+> This light theme focuses on **clarity, readability, and accessibility**,  
+> using soft neutrals with a green accent for primary interactions.
 
 ## ✅ Best Practices Followed
 
