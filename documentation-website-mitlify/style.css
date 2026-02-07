@@ -48,6 +48,7 @@ header nav {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 9999;
   animation: add-glass linear both;
   animation-timeline: scroll();
   animation-range: 0px 50px;
