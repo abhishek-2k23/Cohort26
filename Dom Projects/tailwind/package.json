@@ -1,0 +1,10 @@
+{
+  "name": "litewind",
+  "version": "1.0.0",
+  "description": "A lightweight Tailwind-like CSS engine in pure JavaScript",
+  "main": "src/index.js",
+  "type": "module",
+  "keywords": ["tailwind", "css", "utility", "js"],
+  "author": "Abhishek Kumar",
+  "license": "MIT"
+}
