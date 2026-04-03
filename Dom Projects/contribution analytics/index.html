@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pulse | Contributor Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GitHub <span>Pulse</span></h1>
+            <div class="search-box">
+                <input type="text" id="org-input" placeholder="Enter Organization (e.g. facebook, google)">
+                <button id="search-btn">Analyze</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="repo-grid" class="repo-grid"></section>
+            
+            <aside id="detail-panel" class="">
+                <div class="panel-content">
+                    <button id="close-panel">×</button>
+                    <h2>Top Contributors</h2>
+                    <div id="contributors-list"></div>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
