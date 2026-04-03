@@ -4,7 +4,16 @@
   "description": "A lightweight Tailwind-like CSS engine in pure JavaScript",
   "main": "src/index.js",
   "type": "module",
-  "keywords": ["tailwind", "css", "utility", "js"],
+  "keywords": [
+    "tailwind",
+    "css",
+    "utility",
+    "js"
+  ],
   "author": "Abhishek Kumar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhishek-2k23/litewind.git"
+  },
   "license": "MIT"
 }
