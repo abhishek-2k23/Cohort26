@@ -1,0 +1,5 @@
+
+setTimeout(() => console.log("timeout"), 0);
+setImmediate(() => console.log("immediate"), 0);    
+
+console.log("hello")
