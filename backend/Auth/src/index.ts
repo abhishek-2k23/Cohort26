@@ -7,7 +7,7 @@ const port = process.env.port || 8080
 
 async function main() {
     try{
-        const server = createServer(createApplication);
+        const server = createServer(createApplication());
         server.listen(port, () => {
             console.log(`Http server is running on PORT ${port}`)
         })
