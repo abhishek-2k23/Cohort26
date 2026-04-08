@@ -7,9 +7,14 @@ Your task is to design the ER diagram for this clinic system.
 
 This assignment is not about making a hospital-level giant system. Keep it focused on a clinic that handles appointments, consultations, diagnostics, and reporting in a clean and scalable way.
 
-## What You Have to Do
-Your design should support questions like:
+---
 
+## ER Diagram
+![DB- Clinic](./clinic.png)
+
+---
+
+# What I have implemented
 ## Who are the doctors and what are their specialties?
 - Which patient booked which appointment?
 - What was the appointment status?
@@ -23,7 +28,9 @@ Your design should support questions like:
 - What to Make
 - Create an ER diagram for this clinic platform.
 
-## Your ERD should include the important parts of the business, such as:
+---
+
+## This  ERD includes the important parts of the business, such as:
 
 - patients
 - doctors
@@ -40,5 +47,3 @@ whether tests belong to appointments, consultations, or patients
 how reports should be linked
 whether doctor specialty should be a separate entity or attribute
 whether multiple tests can belong to a single consultation
-
-![clinic-ERD]('./clinic.png')
