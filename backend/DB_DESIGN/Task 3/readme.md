@@ -10,7 +10,7 @@ This assignment is not about making a hospital-level giant system. Keep it focus
 ---
 
 ## ER Diagram
-![DB- Clinic](./clinic.png)
+![DB- Clinic](./clinic_1.png)
 
 ---
 
