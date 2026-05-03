@@ -1,0 +1,101 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PROJECT LABEL */
+.project-label {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+/* CARD */
+.card {
+  width: 320px;
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(18px);
+  border: 1px solid #1e293b;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+/* HEADINGS */
+.card h2 {
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  background: #020617;
+  color: white;
+  outline: none;
+}
+
+input:focus {
+  border-color: #38bdf8;
+}
+
+/* BUTTON */
+.btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+.logout {
+  margin-top: 15px;
+  background: #f87171;
+}
+
+.logout:hover {
+  background: #ef4444;
+}
+
+/* TEXT */
+.msg {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.toggle {
+  margin-top: 15px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #38bdf8;
+}
+
+/* PROFILE */
+.profile span {
+  color: #94a3b8;
+}

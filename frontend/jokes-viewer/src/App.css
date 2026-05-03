@@ -1,0 +1,102 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #1e293b;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #facc15;
+}
+
+.refresh-btn {
+  background: #38bdf8;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.refresh-btn:hover {
+  background: #0ea5e9;
+}
+
+/* MAIN */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+/* CARD */
+.card {
+  max-width: 600px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  border: 1px solid #1e293b;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* TEXT */
+.setup {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.punchline {
+  font-size: 22px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+/* CONTROLS */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.controls button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #facc15;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background: #eab308;
+}
+
+/* LOADING */
+.loading {
+  font-size: 18px;
+  color: #94a3b8;
+}
