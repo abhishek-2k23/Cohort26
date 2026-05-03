@@ -78,68 +78,117 @@ export default function App() {
 
   return (
     <div className="app">
-
-      {/* PROJECT LABEL */}
-      <div className="project-label">🚀 Project 1</div>
-
-      {user ? (
-        <div className="card profile">
-          <h2>Welcome 👋</h2>
-
-          <p><span>Username:</span> {user.username}</p>
-          <p><span>Email:</span> {user.email}</p>
-          <p><span>Role:</span> {user.role}</p>
-
-          <button className="btn logout" onClick={logout}>
-            Logout
-          </button>
+      {/* NAVBAR */}
+      <nav className="navbar">
+        <div className="nav-brand">
+          <span className="logo-icon">✨</span>
+          <span className="logo-text">Auth Flow</span>
         </div>
-      ) : (
-        <div className="card auth">
-          <h2>{isLogin ? "Login" : "Register"}</h2>
+        <a href="/" className="nav-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Home
+        </a>
+      </nav>
 
-          <form onSubmit={handleSubmit}>
-            {!isLogin && (
-              <input
-                placeholder="Email"
-                onChange={(e) =>
-                  setForm({ ...form, email: e.target.value })
-                }
-              />
-            )}
+      <main className="main-content">
+        <div className="auth-wrapper">
+          {user ? (
+            <div className="card profile-card">
+              <div className="profile-header">
+                <div className="avatar">
+                  {user.username.charAt(0).toUpperCase()}
+                </div>
+                <h2>Welcome back!</h2>
+              </div>
+              
+              <div className="profile-details">
+                <div className="detail-item">
+                  <span className="label">Username</span>
+                  <span className="value">{user.username}</span>
+                </div>
+                <div className="detail-item">
+                  <span className="label">Email</span>
+                  <span className="value">{user.email}</span>
+                </div>
+                <div className="detail-item">
+                  <span className="label">Role</span>
+                  <span className="badge">{user.role}</span>
+                </div>
+              </div>
 
-            <input
-              placeholder="Username"
-              onChange={(e) =>
-                setForm({ ...form, username: e.target.value })
-              }
-            />
+              <button className="btn logout-btn" onClick={logout}>
+                Logout
+              </button>
+            </div>
+          ) : (
+            <div className="card auth-card">
+              <div className="card-header">
+                <h2>{isLogin ? "Welcome Back" : "Create Account"}</h2>
+                <p>{isLogin ? "Sign in to continue" : "Sign up to get started"}</p>
+              </div>
 
-            <input
-              type="password"
-              placeholder="Password"
-              onChange={(e) =>
-                setForm({ ...form, password: e.target.value })
-              }
-            />
+              <form onSubmit={handleSubmit} className="auth-form">
+                {!isLogin && (
+                  <div className="input-group">
+                    <input
+                      type="email"
+                      placeholder="Email address"
+                      value={form.email}
+                      onChange={(e) =>
+                        setForm({ ...form, email: e.target.value })
+                      }
+                      required
+                    />
+                  </div>
+                )}
 
-            <button className="btn">
-              {loading ? "Please wait..." : isLogin ? "Login" : "Register"}
-            </button>
-          </form>
+                <div className="input-group">
+                  <input
+                    type="text"
+                    placeholder="Username"
+                    value={form.username}
+                    onChange={(e) =>
+                      setForm({ ...form, username: e.target.value })
+                    }
+                    required
+                  />
+                </div>
 
-          {msg && <p className="msg">{msg}</p>}
+                <div className="input-group">
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    value={form.password}
+                    onChange={(e) =>
+                      setForm({ ...form, password: e.target.value })
+                    }
+                    required
+                  />
+                </div>
 
-          <p
-            className="toggle"
-            onClick={() => setIsLogin(!isLogin)}
-          >
-            {isLogin
-              ? "Don't have an account? Register"
-              : "Already have an account? Login"}
-          </p>
+                <button className="btn submit-btn" disabled={loading}>
+                  {loading ? (
+                    <span className="spinner"></span>
+                  ) : (
+                    isLogin ? "Sign In" : "Sign Up"
+                  )}
+                </button>
+              </form>
+
+              {msg && <div className="msg-alert">{msg}</div>}
+
+              <div className="auth-footer">
+                <p>
+                  {isLogin ? "Don't have an account? " : "Already have an account? "}
+                  <button type="button" className="text-btn" onClick={() => setIsLogin(!isLogin)}>
+                    {isLogin ? "Sign up" : "Sign in"}
+                  </button>
+                </p>
+              </div>
+            </div>
+          )}
         </div>
-      )}
+      </main>
     </div>
   );
 }

@@ -42,6 +42,11 @@ export default function App() {
 
   return (
     <div className="app">
+      <nav className="navbar">
+        <div className="nav-brand">✨ jokes-viewer</div>
+        <a href="/" className="nav-link">Home</a>
+      </nav>
+      <main className="main-content">
       {/* HEADER */}
       <header className="header">
         <div className="logo">😂 Project 5</div>
@@ -68,6 +73,7 @@ export default function App() {
           )
         )}
       </div>
+    </main>
     </div>
   );
 }
