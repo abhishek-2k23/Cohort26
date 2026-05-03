@@ -28,64 +28,98 @@ export default function App() {
 
   return (
     <div className="app">
+      {/* NAVBAR */}
       <nav className="navbar">
-        <div className="nav-brand">✨ random-user</div>
-        <a href="/" className="nav-link">Home</a>
+        <div className="nav-brand">
+          <span className="logo-icon">✨</span>
+          <span className="logo-text">Random User</span>
+        </div>
+        <a href="/" className="nav-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Home
+        </a>
       </nav>
+
       <main className="main-content">
-      {/* HEADER */}
-      <header className="header">
-        <h1>👤 Project 8</h1>
-        <button onClick={fetchUsers}>Refresh</button>
-      </header>
+        {/* HEADER */}
+        <header className="header">
+          <h1>
+            <span>👤</span>
+            Project 8
+          </h1>
+          <button onClick={fetchUsers} disabled={loading}>
+            {loading ? (
+              <span className="spinner spinner-small"></span>
+            ) : (
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            )}
+            Refresh Users
+          </button>
+        </header>
 
-      {loading ? (
-        <div className="loading">Loading users...</div>
-      ) : (
-        <>
-          {/* PROFILE MODAL */}
-          {selected && (
-            <div className="modal">
-              <div className="modal-content">
-                <img src={selected.picture.large} alt="user" />
+        {loading ? (
+          <div className="loading">
+            <span className="spinner"></span>
+            Loading users...
+          </div>
+        ) : (
+          <>
+            {/* PROFILE MODAL */}
+            {selected && (
+              <div className="modal" onClick={() => setSelected(null)}>
+                <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                  <img src={selected.picture.large} alt={`${selected.name.first} ${selected.name.last}`} />
 
-                <h2>
-                  {selected.name.first} {selected.name.last}
-                </h2>
+                  <h2>
+                    {selected.name.first} {selected.name.last}
+                  </h2>
 
-                <p>{selected.email}</p>
-                <p>{selected.phone}</p>
-                <p>{selected.location.country}</p>
+                  <div className="modal-info">
+                    <p>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                      {selected.email}
+                    </p>
+                    <p>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                      {selected.phone}
+                    </p>
+                    <p>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      {selected.location.country}
+                    </p>
+                  </div>
 
-                <button onClick={() => setSelected(null)}>
-                  Close
-                </button>
-              </div>
-            </div>
-          )}
-
-          {/* GRID */}
-          <div className="grid">
-            {users.map((user, i) => (
-              <div
-                key={i}
-                className="card"
-                onClick={() => setSelected(user)}
-              >
-                <img src={user.picture.medium} alt="user" />
-
-                <div className="card-body">
-                  <h3>
-                    {user.name.first} {user.name.last}
-                  </h3>
-                  <p>{user.email}</p>
+                  <button onClick={() => setSelected(null)}>
+                    Close Profile
+                  </button>
                 </div>
               </div>
-            ))}
-          </div>
-        </>
-      )}
-    </main>
+            )}
+
+            {/* GRID */}
+            <div className="grid">
+              {users.map((user, i) => (
+                <div
+                  key={i}
+                  className="card"
+                  onClick={() => setSelected(user)}
+                >
+                  <div className="image-wrapper">
+                    <img src={user.picture.large} alt={`${user.name.first} ${user.name.last}`} loading="lazy" className="image" />
+                  </div>
+
+                  <div className="card-body">
+                    <h3>
+                      {user.name.first} {user.name.last}
+                    </h3>
+                    <p>{user.email}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+      </main>
     </div>
   );
 }
