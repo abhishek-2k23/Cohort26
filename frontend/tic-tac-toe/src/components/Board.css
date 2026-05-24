@@ -1,0 +1,43 @@
+.board-wrapper {
+  position: relative;
+  width: min(80vw, 72vh, 440px);
+  aspect-ratio: 1;
+}
+
+.board-grid {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.grid-line {
+  stroke: var(--color-ink);
+  stroke-width: 3;
+  stroke-linecap: round;
+  /* length ≈ 280 for both horizontal and vertical */
+  stroke-dasharray: 282;
+  stroke-dashoffset: 282;
+}
+
+.gl-1 { animation: draw-grid 0.4s ease-out 0.0s forwards; }
+.gl-2 { animation: draw-grid 0.4s ease-out 0.1s forwards; }
+.gl-3 { animation: draw-grid 0.4s ease-out 0.05s forwards; }
+.gl-4 { animation: draw-grid 0.4s ease-out 0.15s forwards; }
+
+@keyframes draw-grid {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.board-cells {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  z-index: 1;
+}

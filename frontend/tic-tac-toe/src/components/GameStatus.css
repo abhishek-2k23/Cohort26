@@ -1,0 +1,14 @@
+.game-status {
+  font-family: var(--font-sketch);
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 600;
+  color: var(--color-ink);
+  letter-spacing: 0.02em;
+  min-height: 2.2rem;
+  transition: opacity 0.2s;
+}
+
+.game-status--done {
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-weight: 700;
+}

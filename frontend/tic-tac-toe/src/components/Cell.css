@@ -1,0 +1,99 @@
+.cell {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+  position: relative;
+  transition: background 0.15s;
+}
+
+.cell--clickable {
+  cursor: pointer;
+}
+
+.cell--clickable:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* ghost preview on hover */
+.cell--clickable::after {
+  content: '';
+  position: absolute;
+  inset: 15%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.cell--hover-x:hover::after {
+  content: '×';
+  font-size: 3rem;
+  font-family: var(--font-sketch);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  opacity: 0.1;
+  border-radius: 0;
+}
+
+.cell--hover-o:hover::after {
+  content: '○';
+  font-size: 3rem;
+  font-family: var(--font-sketch);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  opacity: 0.1;
+  border-radius: 0;
+}
+
+.mark {
+  width: 100%;
+  height: 100%;
+}
+
+.mark-stroke {
+  fill: none;
+  stroke: var(--color-ink);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* X line 1: from (18,18) to (82,82) — length ≈ 90.5 */
+.x-line1 {
+  stroke-dasharray: 92;
+  stroke-dashoffset: 92;
+  animation: draw-mark 0.35s ease-out forwards;
+}
+
+/* X line 2: delayed so it draws after line 1 */
+.x-line2 {
+  stroke-dasharray: 92;
+  stroke-dashoffset: 92;
+  animation: draw-mark 0.35s ease-out 0.28s forwards;
+}
+
+/* O circle: circumference = 2π×32 ≈ 201 */
+.o-circle {
+  fill: none;
+  stroke-dasharray: 202;
+  stroke-dashoffset: 202;
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  animation: draw-mark 0.55s ease-out forwards;
+}
+
+.cell--winning .mark-stroke {
+  stroke-width: 7;
+}
+
+@keyframes draw-mark {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
